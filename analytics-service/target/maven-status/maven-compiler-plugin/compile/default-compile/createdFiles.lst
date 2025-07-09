@@ -1,0 +1,9 @@
+com\platform\config\FeignClientInterceptorConfig.class
+com\platform\feign\ProductClient.class
+com\platform\AnalyticsServiceApplication.class
+com\platform\service\AnalyticsService.class
+com\platform\controller\AnalyticsController.class
+com\platform\model\DashboardStats.class
+com\platform\config\FeignConfig.class
+com\platform\feign\UserClient.class
+com\platform\feign\OrderClient.class

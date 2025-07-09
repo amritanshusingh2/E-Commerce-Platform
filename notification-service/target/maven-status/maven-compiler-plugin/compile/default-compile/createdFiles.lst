@@ -1,0 +1,4 @@
+com\platform\service\EmailService.class
+com\platform\dto\ContactMessageRequest.class
+com\platform\controller\NotificationController.class
+com\platform\NotificationServiceApplication.class

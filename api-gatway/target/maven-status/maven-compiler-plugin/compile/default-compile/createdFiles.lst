@@ -1,0 +1,4 @@
+in\all\security\JwtGatewayFilter.class
+in\all\security\CorsConfig.class
+in\all\exception\GlobalExceptionHandler.class
+in\all\StartAPIGateway.class

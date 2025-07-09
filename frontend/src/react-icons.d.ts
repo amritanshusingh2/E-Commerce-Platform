@@ -1,0 +1,44 @@
+declare module 'react-icons/fa' {
+  import { ComponentType, SVGProps } from 'react';
+  
+  export const FaUser: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaLock: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaEye: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaEyeSlash: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaShoppingCart: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaBars: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaTimes: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaSignOutAlt: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaEnvelope: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaPhone: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaMapMarkerAlt: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaClock: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaStar: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaSearch: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaFilter: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaTrash: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaMinus: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaPlus: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaArrowLeft: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaArrowRight: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaTruck: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaCheckCircle: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaTimesCircle: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaEye: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaEdit: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaSave: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaKey: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaShieldAlt: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaHeadset: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaUserTie: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaComments: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaCalendar: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaThumbsUp: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaUsers: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaBox: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaChartLine: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaFacebook: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaTwitter: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaInstagram: ComponentType<SVGProps<SVGSVGElement>>;
+  export const FaLinkedin: ComponentType<SVGProps<SVGSVGElement>>;
+} 

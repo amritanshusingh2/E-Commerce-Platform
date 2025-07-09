@@ -1,0 +1,15 @@
+# ------------------------------------------------------------
+# Spring Boot Eureka Discovery Service Configuration
+# ------------------------------------------------------------
+
+server:
+  port: 8081 # The port on which the Eureka server will run
+  servlet:
+    context-path: /eureka # The context path for the Eureka server
+
+eureka:
+  client:
+    register-with-eureka: false # Do not register this server with itself (since it's a standalone Eureka server)
+    fetch-registry: false # Do not fetch registry from other Eureka servers (standalone mode)
+  server:
+    enable-self-preservation: false # Disable self-preservation mode for development/testing (not recommended for production)
