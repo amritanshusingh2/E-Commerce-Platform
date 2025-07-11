@@ -8,42 +8,25 @@
 4. [Prerequisites](#4-prerequisites)
 5. [Architecture Diagram](#5-architecture-diagram)
 6. [Module Overview](#6-module-overview)
+   * [Discovery Server (Eureka)](#discovery-server-eureka)
+   * [API Gateway](#api-gateway)
+   * [User Authentication and Profile Management Module](#user-authentication-and-profile-management-module)
+   * [Admin Dashboard Module](#admin-dashboard-module)
    * [Product Management Module](#product-management-module)
    * [Shopping Cart Module](#shopping-cart-module)
    * [Order Management Module](#order-management-module)
-   * [User Authentication and Profile Management Module](#user-authentication-and-profile-management-module)
-   * [Admin Dashboard Module](#admin-dashboard-module)
-   * [Analytics Service](#analytics-service)
    * [Notification Service](#notification-service)
-   * [API Gateway](#api-gateway)
-   * [Discovery Server (Eureka)](#discovery-server-eureka)
-7. [Deployment Strategy](#7-deployment-strategy)
+   * [Analytics Service](#analytics-service)
+8. [Deployment Strategy](#7-deployment-strategy)
    * [Local Deployment](#local-deployment)
-8. [Database Design](#8-database-design)
+9. [Database Design](#8-database-design)
    * [Tables and Relationships](#tables-and-relationships)
-9. [User Interface Design](#9-user-interface-design)
+10. [User Interface Design](#9-user-interface-design)
    * [Wireframes](#wireframes)
-10. [Module Setup Instructions](#10-module-setup-instructions)
-11. [Testing](#11-testing)
+11. [Module Setup Instructions](#10-module-setup-instructions)
+12. [Testing](#11-testing)
    * [Unit Testing](#unit-testing)
 
----
-
-## Module Assignment Table
-
-| Module                                      | Assigned To     |
-|---------------------------------------------|-----------------|
-| User Authentication and Profile Management  | Kamal Yadav     |
-| Product Management Module                   | Santhoshram     |
-| Shopping Cart Module                        | Achyuth         |
-| Order Management Module                     | Amritanshu      |
-| Admin Dashboard Module                      | Common          |
-| Analytics Service                           | Common          |
-| Notification Service                        | Common          |
-| API Gateway                                 | Common          |
-| Discovery Server (Eureka)                   | Common          |
-
----
 
 ## 1. Overview
 
@@ -162,49 +145,49 @@ graph TD
 
 ## 6. Module Overview
 
-### Product Management Module
-- **Features**: Manage product listings, including creation, updates, and categorization.
-- **Entities**: Product (ProductID, Name, Description, Price, Category, ImageURL)
-
-[Product Management Module](https://github.com/Santhoshram7077/E-Commerce/blob/main/README.md)
-
-### Shopping Cart Module
-- **Features**: Add/remove products to/from the shopping cart, view items and total price.
-- **Entities**: CartItem (CartItemID, ProductID, Quantity, TotalPrice)
-
-[Shopping Cart Module](https://github.com/ACHYUTH-S-11/E-Commerce/blob/main/README.md)
-
-### Order Management Module
-- **Features**: Place orders with shipping details, payment processing.
-- **Entities**: Order (OrderID, UserID, TotalPrice, ShippingAddress, OrderStatus, PaymentStatus)
-
-[Order Management Module](https://github.com/amritanshusingh2/order-management-module/blob/main/order-management-module/README.md)
-
-### User Authentication and Profile Management Module
-- **Features**: User registration and login functionality, profile updates.
-- **Entities**: User (UserID, Name, Email, Password, ShippingAddress, PaymentDetails)
-
-[User Authentication and Profile Management Module](https://github.com/yadavkamal081/E-Commerce/blob/main/README.md)
-
-### Admin Dashboard Module
-- **Features**: Manage products, view order statuses, customer details, generate sales analytics and reports.
-- **Entities**: Admin (AdminID, Name, Role, Permissions)
-
-### Analytics Service
-- **Features**: Provides analytics on sales, user activity, and generates reports for the admin dashboard.
-- **Entities**: DashboardStats (Sales, Users, Orders, Revenue, etc.)
-
-### Notification Service
-- **Features**: Sends email notifications for order status updates and user actions.
-- **Entities**: ContactMessageRequest (Email, Subject, Message)
+### Discovery Server (Eureka)
+- Acts as a service registry where all microservices register themselves.
+- Enables dynamic service discovery and communication within the ecosystem.
 
 ### API Gateway
 - Provides a unified entry point to route incoming client requests to appropriate microservices.
 - Handles load balancing, logging, and cross-cutting concerns.
 
-### Discovery Server (Eureka)
-- Acts as a service registry where all microservices register themselves.
-- Enables dynamic service discovery and communication within the ecosystem.
+### User Authentication and Profile Management Module
+- **Features**: User registration and login functionality, profile updates.
+- **Entities**: User (UserID, Name, Email, Password, ShippingAddress, PaymentDetails)
+
+[User Authentication and Profile Management Module](https://github.com/yadavkamal081/E-Commerce/blob/main/README.md) - [Kamal Yadav]
+
+### Admin Dashboard Module
+- **Features**: Manage products, view order statuses, customer details, generate sales analytics and reports.
+- **Entities**: Admin (AdminID, Name, Role, Permissions)
+  
+### Product Management Module
+- **Features**: Manage product listings, including creation, updates, and categorization.
+- **Entities**: Product (ProductID, Name, Description, Price, Category, ImageURL)
+
+[Product Management Module](https://github.com/Santhoshram7077/E-Commerce/blob/main/README.md) - [Santhoshram]  
+
+### Shopping Cart Module
+- **Features**: Add/remove products to/from the shopping cart, view items and total price. 
+- **Entities**: CartItem (CartItemID, ProductID, Quantity, TotalPrice)
+
+[Shopping Cart Module](https://github.com/ACHYUTH-S-11/E_Commerce/blob/main/README.md) - [Achyuth]
+
+### Order Management Module 
+- **Features**: Place orders with shipping details, payment processing.
+- **Entities**: Order (OrderID, UserID, TotalPrice, ShippingAddress, OrderStatus, PaymentStatus)
+
+[Order Management Module](https://github.com/amritanshusingh2/order-management-module/blob/main/order-management-module/README.md) - [Amritanshu]
+
+### Notification Service
+- **Features**: Sends email notifications for order status updates and user actions.
+- **Entities**: ContactMessageRequest (Email, Subject, Message)
+
+### Analytics Service
+- **Features**: Provides analytics on sales, user activity, and generates reports for the admin dashboard.
+- **Entities**: DashboardStats (Sales, Users, Orders, Revenue, etc.)
 
 ## 7. Deployment Strategy
 
